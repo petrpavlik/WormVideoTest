@@ -40,6 +40,11 @@
     
     AVAsset *asset = [AVURLAsset URLAssetWithURL:assetURL options:nil];
     
+    AVAssetTrack * videoATrack = [asset tracksWithMediaType:AVMediaTypeVideo].firstObject;
+    NSParameterAssert(videoATrack);
+    
+    CGFloat videoFPS = videoATrack.nominalFrameRate;
+    
     SDAVAssetExportSession *exportSession = [[SDAVAssetExportSession alloc] initWithAsset:asset];
     
     exportSession.videoSettings =
@@ -61,6 +66,25 @@
     AVSampleRateKey: @44100,
     AVEncoderBitRateKey: @128000,
     };
+    
+    
+    AVMutableVideoCompositionLayerInstruction *layerInstruction = [AVMutableVideoCompositionLayerInstruction videoCompositionLayerInstructionWithAssetTrack:videoATrack];
+    CGAffineTransform orientationTransform = videoATrack.preferredTransform;
+    CGAffineTransform transform = CGAffineTransformConcat(CGAffineTransformConcat(CGAffineTransformMakeScale(1, 1),  CGAffineTransformMakeTranslation(0, 0)), orientationTransform);
+    
+    [layerInstruction setTransform:transform atTime:kCMTimeZero];
+    
+    AVMutableVideoCompositionInstruction *instruction = [AVMutableVideoCompositionInstruction videoCompositionInstruction];
+    instruction.layerInstructions = @[layerInstruction];
+    instruction.timeRange = videoATrack.timeRange;
+    
+    AVMutableVideoComposition *videoComposition = [AVMutableVideoComposition videoComposition];
+    videoComposition.renderSize = CGSizeMake(1280, 720);
+    videoComposition.renderScale = 1.0;
+    videoComposition.frameDuration = CMTimeMake(1, videoFPS);
+    videoComposition.instructions = @[instruction];
+
+    exportSession.videoComposition = videoComposition;
     
     NSString *uniqueFilename = [NSUUID new].UUIDString;
     

@@ -14,7 +14,7 @@
 		EF398B021CB7D13E00112321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF398B011CB7D13E00112321 /* Assets.xcassets */; };
 		EF398B051CB7D13E00112321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF398B031CB7D13E00112321 /* LaunchScreen.storyboard */; };
 		EF398B0E1CB7D23100112321 /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EF398B0D1CB7D23100112321 /* SDAVAssetExportSession.m */; };
-		EF398B101CB7D82C00112321 /* IMG_0420.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EF398B0F1CB7D34400112321 /* IMG_0420.m4v */; };
+		EF398B121CB7F22B00112321 /* 240fps-orig.MOV in Resources */ = {isa = PBXBuildFile; fileRef = EF398B111CB7F22B00112321 /* 240fps-orig.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		EF398B061CB7D13E00112321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EF398B0C1CB7D23100112321 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
 		EF398B0D1CB7D23100112321 /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
-		EF398B0F1CB7D34400112321 /* IMG_0420.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0420.m4v; sourceTree = "<group>"; };
+		EF398B111CB7F22B00112321 /* 240fps-orig.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "240fps-orig.MOV"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,7 +63,7 @@
 		EF398AF41CB7D13E00112321 /* WormVideoSizeTest */ = {
 			isa = PBXGroup;
 			children = (
-				EF398B0F1CB7D34400112321 /* IMG_0420.m4v */,
+				EF398B111CB7F22B00112321 /* 240fps-orig.MOV */,
 				EF398B0C1CB7D23100112321 /* SDAVAssetExportSession.h */,
 				EF398B0D1CB7D23100112321 /* SDAVAssetExportSession.m */,
 				EF398AF81CB7D13E00112321 /* AppDelegate.h */,
@@ -144,10 +144,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF398B121CB7F22B00112321 /* 240fps-orig.MOV in Resources */,
 				EF398B051CB7D13E00112321 /* LaunchScreen.storyboard in Resources */,
 				EF398B021CB7D13E00112321 /* Assets.xcassets in Resources */,
 				EF398B001CB7D13E00112321 /* Main.storyboard in Resources */,
-				EF398B101CB7D82C00112321 /* IMG_0420.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
