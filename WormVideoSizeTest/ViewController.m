@@ -45,6 +45,10 @@
     
     CGFloat videoFPS = videoATrack.nominalFrameRate;
     
+    // Use these below...
+    NSInteger videoWidth = videoATrack.naturalSize.width;
+    NSInteger videoHeight = videoATrack.naturalSize.height;
+    
     SDAVAssetExportSession *exportSession = [[SDAVAssetExportSession alloc] initWithAsset:asset];
     
     exportSession.videoSettings =
@@ -54,8 +58,8 @@
       AVVideoHeightKey: @720,
       AVVideoCompressionPropertiesKey: @
           {
-          AVVideoAverageBitRateKey: @1100000,
-          AVVideoProfileLevelKey: AVVideoProfileLevelH264High40,
+          AVVideoAverageBitRateKey: @10000000,
+          AVVideoProfileLevelKey: AVVideoProfileLevelH264High41,
           },
       };
     
