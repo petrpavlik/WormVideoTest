@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		49CC52281CB7E314008B2E73 /* 240fps-orig.MOV in Resources */ = {isa = PBXBuildFile; fileRef = 49CC52271CB7E314008B2E73 /* 240fps-orig.MOV */; };
 		EF398AF71CB7D13E00112321 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EF398AF61CB7D13E00112321 /* main.m */; };
 		EF398AFA1CB7D13E00112321 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EF398AF91CB7D13E00112321 /* AppDelegate.m */; };
 		EF398AFD1CB7D13E00112321 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF398AFC1CB7D13E00112321 /* ViewController.m */; };
@@ -19,7 +18,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		49CC52271CB7E314008B2E73 /* 240fps-orig.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = "240fps-orig.MOV"; sourceTree = "<group>"; };
 		EF398AF21CB7D13E00112321 /* WormVideoSizeTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WormVideoSizeTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF398AF61CB7D13E00112321 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EF398AF81CB7D13E00112321 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -66,7 +64,6 @@
 			isa = PBXGroup;
 			children = (
 				EF398B0F1CB7D34400112321 /* IMG_0420.m4v */,
-				49CC52271CB7E314008B2E73 /* 240fps-orig.MOV */,
 				EF398B0C1CB7D23100112321 /* SDAVAssetExportSession.h */,
 				EF398B0D1CB7D23100112321 /* SDAVAssetExportSession.m */,
 				EF398AF81CB7D13E00112321 /* AppDelegate.h */,
@@ -147,7 +144,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49CC52281CB7E314008B2E73 /* 240fps-orig.MOV in Resources */,
 				EF398B051CB7D13E00112321 /* LaunchScreen.storyboard in Resources */,
 				EF398B021CB7D13E00112321 /* Assets.xcassets in Resources */,
 				EF398B001CB7D13E00112321 /* Main.storyboard in Resources */,
