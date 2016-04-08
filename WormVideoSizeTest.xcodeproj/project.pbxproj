@@ -13,6 +13,8 @@
 		EF398B001CB7D13E00112321 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF398AFE1CB7D13E00112321 /* Main.storyboard */; };
 		EF398B021CB7D13E00112321 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EF398B011CB7D13E00112321 /* Assets.xcassets */; };
 		EF398B051CB7D13E00112321 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF398B031CB7D13E00112321 /* LaunchScreen.storyboard */; };
+		EF398B0E1CB7D23100112321 /* SDAVAssetExportSession.m in Sources */ = {isa = PBXBuildFile; fileRef = EF398B0D1CB7D23100112321 /* SDAVAssetExportSession.m */; };
+		EF398B101CB7D82C00112321 /* IMG_0420.m4v in Resources */ = {isa = PBXBuildFile; fileRef = EF398B0F1CB7D34400112321 /* IMG_0420.m4v */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		EF398B011CB7D13E00112321 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF398B041CB7D13E00112321 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF398B061CB7D13E00112321 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF398B0C1CB7D23100112321 /* SDAVAssetExportSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDAVAssetExportSession.h; sourceTree = "<group>"; };
+		EF398B0D1CB7D23100112321 /* SDAVAssetExportSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDAVAssetExportSession.m; sourceTree = "<group>"; };
+		EF398B0F1CB7D34400112321 /* IMG_0420.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = IMG_0420.m4v; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +63,9 @@
 		EF398AF41CB7D13E00112321 /* WormVideoSizeTest */ = {
 			isa = PBXGroup;
 			children = (
+				EF398B0F1CB7D34400112321 /* IMG_0420.m4v */,
+				EF398B0C1CB7D23100112321 /* SDAVAssetExportSession.h */,
+				EF398B0D1CB7D23100112321 /* SDAVAssetExportSession.m */,
 				EF398AF81CB7D13E00112321 /* AppDelegate.h */,
 				EF398AF91CB7D13E00112321 /* AppDelegate.m */,
 				EF398AFB1CB7D13E00112321 /* ViewController.h */,
@@ -139,6 +147,7 @@
 				EF398B051CB7D13E00112321 /* LaunchScreen.storyboard in Resources */,
 				EF398B021CB7D13E00112321 /* Assets.xcassets in Resources */,
 				EF398B001CB7D13E00112321 /* Main.storyboard in Resources */,
+				EF398B101CB7D82C00112321 /* IMG_0420.m4v in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,6 +161,7 @@
 				EF398AFD1CB7D13E00112321 /* ViewController.m in Sources */,
 				EF398AFA1CB7D13E00112321 /* AppDelegate.m in Sources */,
 				EF398AF71CB7D13E00112321 /* main.m in Sources */,
+				EF398B0E1CB7D23100112321 /* SDAVAssetExportSession.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +274,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WormVideoSizeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.wormapp.videosizetest.WormVideoSizeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -275,6 +286,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = WormVideoSizeTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.wormapp.videosizetest.WormVideoSizeTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
