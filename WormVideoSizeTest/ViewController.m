@@ -32,7 +32,7 @@
 
 - (void)processVideo {
     
-    NSURL *assetURL = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:@"IMG_0420.m4v"];
+    NSURL *assetURL = [[[NSBundle mainBundle] resourceURL] URLByAppendingPathComponent:@"240fps-orig.MOV"];
     
     NSDictionary *fileAttributes = [[NSFileManager defaultManager] attributesOfItemAtPath:assetURL.path error:nil];
     NSNumber *fileSizeNumber = [fileAttributes objectForKey:NSFileSize];
